@@ -4,7 +4,7 @@
 
 char auth[] = ""; //токен авторизации
 char ssid[] = "RingoStarr";
-char pass[] = "4815162342";
+char pass[] = "";
 
 BLYNK_CONNECTED()
 {
