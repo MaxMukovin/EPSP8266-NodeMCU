@@ -1,7 +1,7 @@
 ### Скетчи
 
-- [Простой скетч](https://github.com/MaxMukovin/EPSP8266-NodeMCU/blob/main/Sketches/Blynk_Simple/Blynk_Simple.ino);
- - [Продвинутый скетч](https://github.com/MaxMukovin/EPSP8266-NodeMCU/blob/main/Sketches/Blynk_Pro/Blynk_Pro.ino)
+- [Простой скетч (Blynk)](https://github.com/MaxMukovin/EPSP8266-NodeMCU/blob/main/Sketches/Blynk_Simple/Blynk_Simple.ino);
+ - [Продвинутый скетч (Blynk)](https://github.com/MaxMukovin/EPSP8266-NodeMCU/blob/main/Sketches/Blynk_Pro/Blynk_Pro.ino)
 
 ### Прошивка
 
