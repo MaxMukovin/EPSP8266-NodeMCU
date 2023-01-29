@@ -6,17 +6,13 @@ EspMQTTClient client(
   "RingoStarr",
   "4815162342",
   "dev.rightech.io",
-  "mqtt-maxmukovin-zukxz2"
+  "mqtt-maxmukovin-qj6am8"
 );
 void setup() {
   pinMode(4, OUTPUT);
   pinMode(5, OUTPUT);
-  pinMode(0, OUTPUT);
-  pinMode(2, OUTPUT);
-  digitalWrite(4, 0);
-  digitalWrite(5, 0);
-  digitalWrite(0, 0);
-  digitalWrite(2, 0);
+  digitalWrite(4, 1);
+  digitalWrite(5, 1);
   Serial.begin(9600);
 }
 
@@ -24,13 +20,12 @@ void onConnectionEstablished() {
 
   Serial.println("connected");
 
-  client.subscribe("base/relay/led1", [] (const String & payload) {
+  client.subscribe("base/relay/pin1", [] (const String & payload) {
     Serial.println(payload);
-    digitalWrite(5, !payload.toInt());
+    digitalWrite(4, payload.toInt());
   });
 
-    client.subscribe("base/relay/feed", [] (const String & payload) {
-    Serial.println(payload);
+    client.subscribe("base/relay/pin1", [] (const String & payload) {
     if (!payload.toInt() == 0){
     digitalWrite(4, payload.toInt());
     delay(500);
